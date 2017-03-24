@@ -10,19 +10,19 @@ Posts:
 GET: http://oddjobbackend.herokuapp.com/posts
 
 -Get specific post based on unique ID
-GET: http://oddjobbackend.herokuapp.com/posts/<UNIQUD ID OF POST here> 
+GET: http://oddjobbackend.herokuapp.com/posts/(postID) 
 
 -update post
 
-PUT: http://oddjobbackend.herokuapp.com/posts/<UNIQUE ID OF POST HERE> 
+PUT: http://oddjobbackend.herokuapp.com/posts/(postID) 
 
 -delete post
 
-DELETE: http://oddjobbackend.herokuapp.com/deletePost/<UNIQUE ID OF POST HERE> 
+DELETE: http://oddjobbackend.herokuapp.com/deletePost/(postID)
 
 -create post
 
-POST: http://oddjobbackend.herokuapp.com/newPost?title=<TITLEHERE>&creator=<CREATORHERE>content=<CONTENTHERE>&uniqueID=<UNIQUEIDHERE>&category=<CATEGORYHERE> 
+POST: http://oddjobbackend.herokuapp.com/newPost?title=(TITLE)&creator=<(CREATOR)content=(CONTENT)&uniqueID=(ID)&category=(CATEGORY) 
 
 
 Users: 
@@ -32,18 +32,18 @@ GET: http://oddjobbackend.herokuapp.com/users
 
 -Get specific user
 
-GET: http://oddjobbackend.herokuapp.com/users/<emailaddressofuserhere> 
+GET: http://oddjobbackend.herokuapp.com/users/(emailaddress) 
 
 -update user
-PUT: http://oddjobbackend.herokuapp.com/users/<emailaddressofuserhere> 
+PUT: http://oddjobbackend.herokuapp.com/users/(emailaddress) 
 
 -Create User
 
-POST: http://oddjobbackend.herokuapp.com/newUser?firstName=<FIRSTNAMEHERE>&lastName=<LASTNAMEHERE>&email=<EMAILHERE>&phone=<PHONEHERE>&password=<PASSWORDHERE> 
+POST: http://oddjobbackend.herokuapp.com/newUser?firstName=(FirstName)&lastName=(LASTNAME)&email=(EMAIL)&phone=(PHONE)&password=(PASSWORD) 
 
 -delete user
 
-DELETE:http://oddjobbackend.herokuapp.com/deleteUser/<Email address of user here> 
+DELETE:http://oddjobbackend.herokuapp.com/deleteUser/(emailaddress)  
 
 
 Schemas: 
