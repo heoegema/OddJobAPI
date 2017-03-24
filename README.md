@@ -22,7 +22,7 @@ DELETE: http://oddjobbackend.herokuapp.com/deletePost/(postID)
 
 -create post
 
-POST: http://oddjobbackend.herokuapp.com/newPost?title=(TITLE)&creator=<(CREATOR)content=(CONTENT)&uniqueID=(ID)&category=(CATEGORY) 
+POST: http://oddjobbackend.herokuapp.com/newPost?title=(TITLE)&creator=<(CREATOR)content=(CONTENT)&uniqueID=(ID)&category=(CATEGORY)&postalCode=(POSTALCODE)
 
 
 Users: 
@@ -61,4 +61,5 @@ Posts:
   creator: String,
   content: String,
   uniqueID: String,
-  category: String
+  category: String,
+  postalCode: String
