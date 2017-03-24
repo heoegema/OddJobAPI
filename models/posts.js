@@ -7,7 +7,8 @@ var postSchema = new Schema({
   creator: String,
   content: String,
   uniqueID: String,
-  category: String
+  category: String,
+  postalCode: String
 });
 
 mongoose.model('post', postSchema);
