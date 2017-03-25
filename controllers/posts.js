@@ -41,6 +41,14 @@ exports.deletePost = function(req, res) {
 
 }
 
+exports.deletePostId = function(req, res) {
+  var id = req.params.id;
+  post.remove({'_id': id}, function(result){
+    return res.send(results);
+
+  });
+
+}
 
 exports.findById = function(req, res) {
   var id = req.params.id;
