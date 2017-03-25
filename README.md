@@ -45,6 +45,19 @@ POST: http://oddjobbackend.herokuapp.com/newUser?firstName=(FirstName)&lastName=
 
 DELETE:http://oddjobbackend.herokuapp.com/deleteUser/(emailaddress)  
 
+Messages: 
+
+-Create message
+ 
+ POST: http://oddjobbackend.herokuapp.com/newMessage
+
+-Get all messages
+
+GET: http://oddjobbackend.herokuapp.com/messages
+
+-get specific message based on ID 
+
+GET: http://oddjobbackend.herokuapp.com/messages/(ID OF MESSAGE) 
 
 Schemas: 
 
@@ -63,3 +76,10 @@ Posts:
   uniqueID: String,
   category: String,
   postalCode: String
+  
+  
+  Messages: 
+    name: String,
+    message: String,
+    personSent: String,
+    id: String
