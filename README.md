@@ -49,7 +49,7 @@ Messages:
 
 -Create message
  
- POST: http://oddjobbackend.herokuapp.com/newMessage
+ POST: http://oddjobbackend.herokuapp.com/newMessage?name=(NAME)&message=(MESSAGE)&personSent=(PERSONSENT)&id=(ID)
 
 -Get all messages
 
