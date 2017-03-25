@@ -8,7 +8,9 @@ var postSchema = new Schema({
   content: String,
   uniqueID: String,
   category: String,
-  postalCode: String
+  postalCode: String,
+  postDate: String,
+  endDate: String
 });
 
 mongoose.model('post', postSchema);

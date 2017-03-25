@@ -12,7 +12,7 @@ exports.getAllPosts = function(req, res) {
 exports.createPost = function(req, res) {
   //create post
   post.create(
-   { "title": req.query.title, "creator": req.query.creator, "content": req.query.content, "uniqueID": req.query.uniqueID, "category": req.query.category, "postalCode": req.query.postalCode}
+   { "title": req.query.title, "creator": req.query.creator, "content": req.query.content, "uniqueID": req.query.uniqueID, "category": req.query.category, "postalCode": req.query.postalCode, "postDate": req.query.postDate, "endDate": req.query.endDate}
 
  , function (err) {
    if (err) return console.log(err);
@@ -44,8 +44,7 @@ exports.deletePost = function(req, res) {
 exports.deletePostId = function(req, res) {
   var id = req.params.id;
   post.remove({'_id': id}, function(result){
-    return res.send(results);
-
+    return res.send(result);
   });
 
 }
