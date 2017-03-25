@@ -49,7 +49,7 @@ Messages:
 
 -Create message
  
- POST: http://oddjobbackend.herokuapp.com/newMessage?name=(NAME)&message=(MESSAGE)&personSent=(PERSONSENT)&id=(ID)
+ POST: http://oddjobbackend.herokuapp.com/newMessage?name=(NAME)&message=(MESSAGE)&personSent=(PERSONSENT)&id=(ID)&email=(EMAIL)
 
 -Get all messages
 
@@ -58,6 +58,10 @@ GET: http://oddjobbackend.herokuapp.com/messages
 -get specific message based on ID 
 
 GET: http://oddjobbackend.herokuapp.com/messages/(ID OF MESSAGE) 
+
+-Delete a specific message 
+
+DELETE: http://oddjobbackend.herokuapp.com/deleteMessage/(ID OF MESSAGE) 
 
 Schemas: 
 
